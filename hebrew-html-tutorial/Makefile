@@ -13,3 +13,6 @@ $(DOC).xml: $(DOC).xml.tt
 
 firefox: html-xsl
 	mozilla-firefox $(DOC)/index.html
+
+edit:
+	gvim $(DOC).xml.tt style.css Summary.txt
