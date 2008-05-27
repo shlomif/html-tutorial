@@ -19,14 +19,14 @@
              <year>2008</year>
             <holder>Shlomi Fish</holder>
         </copyright>
-      <legalnotice lang="en">
+      <legalnotice xml:lang="en">
             <!-- Ci vis pacem -->
-            <para lang="en">
+            <para xml:lang="en">
                 <!-- belum. ;-) -->
                 This document was written by Shlomi Fish and is available
                 under the terms of either the:
             </para>
-            <orderedlist lang="en">
+            <orderedlist xml:lang="en">
                 <listitem>
                     <para>
                         <ulink url="http://creativecommons.org/licenses/publicdomain/">The Public Domain</ulink>,

@@ -11,8 +11,8 @@ $(DOC).xml: $(DOC).xml.tt
 
 html-xsl: $(DOC)/index.html $(DOC)/style.css
 
-$(DOC)/index.html: $(DOC).xml
-	xsltproc -o $@ /usr/share/sgml/docbook/xsl-stylesheets-db5-1.73.2/xhtml/docbook.xsl $<
+$(DOC)/index.html: $(DOC).xml custom.xsl
+	xsltproc --path /usr/share/sgml/docbook/xsl-stylesheets-db5-1.73.2/xhtml -o $@ custom.xsl $<
 
 $(DOC)/style.css: style.css
 	cp -f $< $@
