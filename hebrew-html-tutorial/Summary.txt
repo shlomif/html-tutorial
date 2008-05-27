@@ -1,0 +1,74 @@
+- text as HTML.
+    - Editing text
+    - a Note about Hebrew.
+- The <p> tag.
+- Skeleton of an HTML document.
+    - <html>, <body>, 
+    - The DOCTYPE
+    - The xml declaration.
+- The <a> tag.
+    - URLs and Links.
+        - relative links - "./FOO" "../FOO" "FOO/"
+        - top-level links - "/FOO".
+        - absolute links - "http://..../",
+- The <h1>,<h2>, etc. tags.
+- The <br /> tag.
+- The id="" attribute.
+    - The "#placeholder" notation for internal links.
+- The <head> element.
+    - <title>
+    - <link rel="" />"
+    - <style>
+
+=== End of Part 1 ===
+
+* Associating CSS.
+    - <style>
+    - <link rel="...".
+    - The style attribute.
+* Simple CSS Declarations.
+
+    h1 { color: green; }
+    
+* CSS Attributes:
+    - color
+    - background-color
+    - font-*
+- class selectors
+    .hello
+- id selectors
+    - #hello
+
+=== End of Part 2 ===
+
+- <strong> and <em>.
+    - note about <b> and <i>.
+- <ul> and <ol>, <li>.
+    - note about <dl>, <dt> and <dd>.
+- <div>
+- <span>
+- semantic HTML tags.
+    - <blockquote>
+    - <q>
+    - <address>
+
+=== End of Part 3 ===
+
+- CSS attributes:
+    - border-*
+    - padding-*
+    - margin-*
+
+- Child, descendant, etc. selectors
+    - #nav .link
+    - #nav > .link
+    - 
+
+=== End of Part 4 ===
+
+Bi-Directional text:
+    - direction: rtl; and direction: ltr;
+    - text-align {left,right,center};
+    - Encodings and Unicode.
+
+
