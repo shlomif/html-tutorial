@@ -1,18 +1,8 @@
 <?xml version='1.0' ?>
 [% USE wrap %]
 
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//HE"
-"/usr/share/sgml/docbook/xml-dtd-4.3/docbookx.dtd"[
-]>
-<!-- -->
-<!-- $Id$ -->
-<!-- -->
-<!-- $Log$ -->
-<!-- -->
-<!-- General reminders: -->
-
-<book id="index" lang="he">
-    <bookinfo>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" id="index" lang="he">
+    <info>
         <title>המדריך העברי ל-HTML תקני</title>
         <authorgroup>
             <author>
@@ -29,14 +19,14 @@
              <year>2008</year>
             <holder>Shlomi Fish</holder>
         </copyright>
-      <legalnotice>
+      <legalnotice lang="en">
             <!-- Ci vis pacem -->
-            <para>
+            <para lang="en">
                 <!-- belum. ;-) -->
                 This document was written by Shlomi Fish and is available
                 under the terms of either the:
             </para>
-            <orderedlist>
+            <orderedlist lang="en">
                 <listitem>
                     <para>
                         <ulink url="http://creativecommons.org/licenses/publicdomain/">The Public Domain</ulink>,
@@ -72,13 +62,13 @@
                 </revremark>
             </revision>
         </revhistory>
-    </bookinfo>
+    </info>
     <chapter id="introduction">
         <title>מבוא</title>
         <para>
             מדריך זה בא לענות
         </para>
     </chapter>
-</book>    <!-- End of the article -->
+</book>
 <!-- vim:ft=tt2 
 -->
