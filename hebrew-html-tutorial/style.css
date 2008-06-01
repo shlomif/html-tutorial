@@ -1,3 +1,3 @@
 a:hover { background-color : palegreen; }
-:lang(he) { font-family: David; text-align:right;}
+:lang(he) { font-family: David; text-align:right; direction:rtl;}
 :lang(en) { font-family: Times New Roman, Times, Serif; text-align:left;}
