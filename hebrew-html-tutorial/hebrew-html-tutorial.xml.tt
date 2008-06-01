@@ -66,8 +66,52 @@
     <chapter id="introduction">
         <title>מבוא</title>
         <para>
-            מדריך זה בא לענות
+            מדריך זה בא לענות על החוסר במדריכים לכתיבת דפי ואתרי וו'ב בעברית שהינם:
         </para>
+<orderedlist>
+<listitem>
+<para>
+מסבירים כיצד לכתוב קוד תקני וסמנטי.
+</para>
+</listitem>
+<listitem>
+<para>
+תחת רשיון מתירני מספיק.
+</para>
+</listitem>
+<listitem>
+<para>
+בעברית.
+</para>
+</listitem>
+</orderedlist>
+
+<para>
+מכיוון שאני מפתח וו'ב מנוסה וכותב קוד תקני וסמנטי, החלטתי לקחת את היוזמה
+ולכתוב מדריך כזה. הידע הנדרש הוא:
+</para>
+
+<orderedlist>
+<listitem>
+<para>
+ידע בסיס בעריכת טקסט פשוט. לא מדובר בשימוש ב-וורד, אלא בעורך טקסט כמו Notepad.
+מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו 
+<ulink url="http://notepad-plus.sourceforge.net/">Notepad++</ulink>
+או תחליף אחר הולם לסביבת העבודה החביבה עליכם.
+</para>
+</listitem>
+<listitem>
+<para>
+ידע בסיסי באנגלית, משום שיש לכתוב קוד באנגלית, גם אם רוב הדף הוא בעברית או בשפה אחרת.
+</para>
+</listitem>
+<listitem>
+<para>
+אמביציה, רעב לידע ונכונות ללמוד.
+</para>
+</listitem>
+</orderedlist>
+
     </chapter>
 </book>
 <!-- vim:ft=tt2 
