@@ -112,6 +112,49 @@
 </listitem>
 </orderedlist>
 
+<para></para>
+
+    </chapter>
+
+    <chapter id="basic-html">
+        <title>HTML בסיסי</title>
+	
+	<para>
+	בפרק זה נלמד כיצד לכתוב HTML בסיסי.
+	</para>
+	
+	<section id="first-document">
+	    <title>מסמך ה-HTML הראשון שלך</title>
+	    
+	    <para>
+		HTML
+		הינו למעשה טקסט פשוט רק עם הוראות
+		שמסבירות כיצד יש לפרש את הטקסט. את
+		המסמך הראשון ניתן לכתוב למשל כך:
+	    </para>
+	    
+	    <programlisting xml:lang="en">
+<![CDATA[
+Hello, World! This is my first HTML Document.
+This is the second line.
+]]>
+	    </programlisting>
+    
+	<para>
+	אם תשמרו מסמך זה לתוך קובץ עם סיומת 
+	<filename xml:lang="en">.html</filename>
+	ותפתחו אותו באמצעות הדפדפן, אז תקבלו משהו
+	כזה בדפדפן:
+	</para>
+
+	<mediaobject>
+	    <imageobject>
+		<imagedata fileref="images/first-document.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
+	
+	</section>
+    
     </chapter>
 </book>
 <!-- vim:ft=tt2 

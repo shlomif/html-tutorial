@@ -1,5 +1,8 @@
 DOC = hebrew-html-tutorial
 
+DEST_DIR = $(DOC)
+DEST_INDEX = $(DEST_DIR)/index.html
+
 all: html-xsl
 
 DOCMAKE_SGML_PATH = ./sgml/shlomif-docbook/
@@ -9,16 +12,30 @@ XMLTO_PARAMS = --stringparam "docmake.output.path_to_root=$(shell perl -e '$$_=s
 $(DOC).xml: $(DOC).xml.tt
 	ttml -o $@ $<
 
-html-xsl: $(DOC)/index.html $(DOC)/style.css
+html-xsl: $(DEST_INDEX) $(DOC)/style.css put-images
 
-$(DOC)/index.html: $(DOC).xml custom.xsl
+$(DEST_INDEX): $(DOC).xml custom.xsl
 	xsltproc --path /usr/share/sgml/docbook/xsl-stylesheets-db5-1.73.2/xhtml -o $@ custom.xsl $<
 
 $(DOC)/style.css: style.css
 	cp -f $< $@
 
 firefox: html-xsl
-	mozilla-firefox $(DOC)/index.html
+	mozilla-firefox $(DEST_INDEX)
 
 edit:
 	gvim $(DOC).xml.tt style.css Summary.txt
+
+IMAGES = first-document.png
+
+DEST_IMAGES_DIR = $(DEST_DIR)/images
+
+DEST_IMAGES = $(addprefix $(DEST_IMAGES_DIR)/,$(IMAGES))
+
+put-images: $(DEST_IMAGES_DIR) $(DEST_IMAGES)
+
+$(DEST_IMAGES_DIR):
+	mkdir -p $@
+
+$(DEST_IMAGES) : $(DEST_IMAGES_DIR)/% : images/%
+	cp -f $< $@
