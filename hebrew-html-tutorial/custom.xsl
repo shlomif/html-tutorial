@@ -1,4 +1,10 @@
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version='1.0'>
+<xsl:stylesheet
+    exclude-resut-prefixes="d"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:d="http://docbook.org/ns/docbook"
+    version='1.0'
+    >
     <xsl:import href="xhtml/docbook.xsl"/>
     <xsl:param name="use.id.as.filename">1</xsl:param>
     <xsl:param name="html.stylesheet">style.css</xsl:param>
@@ -85,5 +91,25 @@ google_color_url = "008000";
     </div>
 </xsl:template>
 
+<xsl:template match="d:para">
+  <xsl:call-template name="language.attribute" />
+  <xsl:call-template name="paragraph">
+    <xsl:with-param name="class">
+      <xsl:if test="@role and $para.propagates.style != 0">
+        <xsl:value-of select="@role"/>
+      </xsl:if>
+    </xsl:with-param>
+    <xsl:with-param name="content">
+      <xsl:if test="position() = 1 and parent::d:listitem">
+        <xsl:call-template name="anchor">
+          <xsl:with-param name="node" select="parent::d:listitem"/>
+        </xsl:call-template>
+      </xsl:if>
+
+      <xsl:call-template name="anchor"/>
+      <xsl:apply-templates/>
+    </xsl:with-param>
+  </xsl:call-template>
+</xsl:template>
 
 </xsl:stylesheet>

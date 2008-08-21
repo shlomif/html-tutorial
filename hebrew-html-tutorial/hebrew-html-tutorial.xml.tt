@@ -1,7 +1,7 @@
 <?xml version='1.0' ?>
 [% USE wrap %]
 
-<book xmlns="http://docbook.org/ns/docbook" version="5.0" id="index" lang="he">
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" id="index" xml:lang="he">
     <info>
         <title>המדריך העברי ל-HTML תקני</title>
         <authorgroup>
