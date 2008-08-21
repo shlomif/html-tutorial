@@ -1,25 +1,25 @@
 <?xml version='1.0' ?>
 
 
-<book xmlns="http://docbook.org/ns/docbook" version="5.0" id="index" xml:lang="he">
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="index" xml:lang="he">
     <info>
         <title>המדריך העברי ל-HTML תקני</title>
-        <authorgroup>
-            <author>
+        <author>
+            <personname>
                 <firstname>Shlomi</firstname>
                 <surname>Fish</surname>
-                <affiliation>
-                    <address>
-                        <email>shlomif@iglu.org.il</email>
-                    </address>
-                </affiliation>
-            </author>
-         </authorgroup>
-         <copyright>
-             <year>2008</year>
+            </personname>
+            <affiliation>
+                <address>
+                    <email>shlomif@iglu.org.il</email>
+                </address>
+            </affiliation>
+        </author>
+        <copyright>
+            <year>2008</year>
             <holder>Shlomi Fish</holder>
         </copyright>
-      <legalnotice xml:lang="en">
+        <legalnotice xml:lang="en">
             <!-- Ci vis pacem -->
             <para xml:lang="en">
                 <!-- belum. ;-) -->
@@ -29,14 +29,14 @@
             <orderedlist xml:lang="en">
                 <listitem>
                     <para>
-                        <ulink url="http://creativecommons.org/licenses/publicdomain/">The Public Domain</ulink>,
+                        <link xlink:href="http://creativecommons.org/licenses/publicdomain/">The Public Domain</link>,
                         as defined by the Creative Commons or your local
                         jurisdication.
                     </para>
                 </listitem>
                 <listitem>
                     <para>
-                        <ulink url="http://creativecommons.org/licenses/by/3.0/">The Creative Commons Attribution License (CC-by) version 3.0</ulink>
+                        <link xlink:href="http://creativecommons.org/licenses/by/3.0/">The Creative Commons Attribution License (CC-by) version 3.0</link>
                         (or at your option any later version of the same
                         license.)
                     </para>
@@ -44,9 +44,9 @@
                 <listitem>
                     <para>
                         The 
-                        <ulink
-                            url="http://www.opensource.org/licenses/mit-license.php">MIT
-                            X11 License</ulink>.
+                        <link
+                            xlink:href="http://www.opensource.org/licenses/mit-license.php">MIT
+                            X11 License</link>.
                     </para>
                 </listitem>
             </orderedlist>
@@ -63,7 +63,7 @@
             </revision>
         </revhistory>
     </info>
-    <chapter id="introduction">
+    <chapter xml:id="introduction">
         <title>מבוא</title>
         <para>
             מדריך זה בא לענות על החוסר במדריכים לכתיבת דפי ואתרי וו'ב בעברית שהינם:
