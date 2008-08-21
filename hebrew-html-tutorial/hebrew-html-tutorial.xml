@@ -64,7 +64,9 @@
         </revhistory>
     </info>
     <chapter xml:id="introduction">
-        <title>מבוא</title>
+        <info>
+            <title>מבוא</title>
+        </info>
         <para>
             מדריך זה בא לענות על החוסר במדריכים לכתיבת דפי ואתרי וו'ב בעברית שהינם:
         </para>
@@ -96,7 +98,7 @@
 <para>
 ידע בסיס בעריכת טקסט פשוט. לא מדובר בשימוש ב-וורד, אלא בעורך טקסט כמו Notepad.
 מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו 
-<ulink url="http://notepad-plus.sourceforge.net/">Notepad++</ulink>
+<link xlink:href="http://notepad-plus.sourceforge.net/">Notepad++</link>
 או תחליף אחר הולם לסביבת העבודה החביבה עליכם.
 </para>
 </listitem>
@@ -112,19 +114,21 @@
 </listitem>
 </orderedlist>
 
-<para></para>
-
     </chapter>
 
-    <chapter id="basic-html">
-        <title>HTML בסיסי</title>
+    <chapter xml:id="basic-html">
+        <info>
+            <title>HTML בסיסי</title>
+        </info>
 	
 	<para>
 	בפרק זה נלמד כיצד לכתוב HTML בסיסי.
 	</para>
 	
-	<section id="first-document">
-	    <title>מסמך ה-HTML הראשון שלך</title>
+    <section xml:id="first-document">
+        <info>
+            <title>מסמך ה-HTML הראשון שלך</title>
+        </info>
 	    
 	    <para>
 		HTML
@@ -157,5 +161,4 @@ This is the second line.
     
     </chapter>
 </book>
-<!-- vim:ft=tt2 
--->
+
