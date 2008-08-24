@@ -33,7 +33,8 @@ edit:
 	gvim $(DOC).xml.tt style.css Summary.txt
 
 IMAGES_PROTO = images/first-document.png \
-			   images/two-paragraphs-without-markup.png
+			   images/two-paragraphs-without-markup.png \
+			   images/two-paragraphs-with-p-tags.png
 
 IMAGES = $(patsubst images/%,%,$(IMAGES_PROTO))
 

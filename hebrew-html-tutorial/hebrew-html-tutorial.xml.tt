@@ -194,11 +194,56 @@ Second paragraph: this is the second paragraph.
         </info>
 
         <para>
+            תגיות HTML בד"כ באות כתגית פותחת ובתוחה טקסט או תגיות נוספות 
+            ותגית סוגרת. התגית הפותחת המתחילה בסימן "קטן 
+            מ" )<code xml:lang="en">&lt;</code>( ואחריה מזהה התגית, ואחריו 
+            תכונות )"Attributes"( הבאות כמזהה, כסימן שווה וכערך הבא בתוך
+            מרכאות. לבסוף באה סוף התגית הפותחת כסימן גדול-מ 
+            )<code xml:lang="en">&gt;</code>( .
         </para>
 
         <para>
+            תגית סוגרת הינה פשוט 
+            <code xml:lang="en">&lt;/tag-identifier&gt;</code> .
+        </para> 
+
+        <para>
+            הנה דוגמה להמחשה באמצעות התגית 
+            <code xml:lang="en">&lt;p&gt;</code> המייצגת פיסקה
+            (<quote xml:lang="en"><emphasis role="bold">P</emphasis>aragraph</quote>):
         </para>
 
+	    <programlisting xml:lang="en">
+<![CDATA[
+<p>
+First paragraph - for real this time.
+</p>
+
+<p>
+Second paragraph - La la la la la.
+</p>
+]]>
+	    </programlisting>
+        
+        <para>
+            ואנו מקבלים את:
+        </para>
+
+
+	<mediaobject>
+	    <imageobject>
+		<imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
+	        
+        <para>
+        </para>
+        <para>
+        </para>
+        <para>
+        </para>
+        <para>
+        </para>
         <para>
         </para>
         
