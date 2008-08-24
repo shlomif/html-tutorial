@@ -21,12 +21,12 @@
         </copyright>
         <legalnotice xml:lang="en">
             <!-- Ci vis pacem -->
-            <para xml:lang="en">
+            <para>
                 <!-- belum. ;-) -->
                 This document was written by Shlomi Fish and is available
                 under the terms of either the:
             </para>
-            <orderedlist xml:lang="en">
+            <orderedlist>
                 <listitem>
                     <para>
                         <link xlink:href="http://creativecommons.org/licenses/publicdomain/">The Public Domain</link>,
@@ -98,7 +98,7 @@
 <para>
 ידע בסיס בעריכת טקסט פשוט. לא מדובר בשימוש ב-וורד, אלא בעורך טקסט כמו Notepad.
 מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו 
-<link xlink:href="http://notepad-plus.sourceforge.net/">Notepad++</link>
+<link xlink:href="http://notepad-plus.sourceforge.net/"><productname xml:lang="en">Notepad++</productname></link>
 או תחליף אחר הולם לסביבת העבודה החביבה עליכם.
 </para>
 </listitem>
