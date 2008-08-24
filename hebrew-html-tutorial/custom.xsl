@@ -245,4 +245,22 @@ google_color_url = "008000";
   </xsl:element>
 </xsl:template>
 
+<xsl:template name="inline.monoseq">
+  <xsl:param name="content">
+    <xsl:call-template name="anchor"/>
+    <xsl:call-template name="simple.xlink">
+      <xsl:with-param name="content">
+        <xsl:apply-templates/>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:param>
+  <code>
+    <xsl:call-template name="language.attribute" />
+    <xsl:apply-templates select="." mode="class.attribute"/>
+    <xsl:call-template name="dir"/>
+    <xsl:call-template name="generate.html.title"/>
+    <xsl:copy-of select="$content"/>
+    <xsl:call-template name="apply-annotations"/>
+  </code>
+</xsl:template>
 </xsl:stylesheet>
