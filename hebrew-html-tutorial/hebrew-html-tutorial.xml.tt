@@ -181,7 +181,29 @@ Second paragraph: this is the second paragraph.
 	    </imageobject>
 	</mediaobject>
 	
+	<para>
+	מה שקרה הוא שבעוד שהטקסט הוא טקסט, הדפדפן זקוק לתגיות HTML (HTML Tags) כדי
+	לדעת כיצד פרמט אותו. אנו נראה מספר תגיות HTML בסיסיות בחלק הבא.
+	</para>
+	
 	</section>
+	
+    <section xml:id="basic-HTML-tags">
+        <info>
+            <title>תגיות HTML בסיסיות</title>
+        </info>
+
+        <para>
+        </para>
+
+        <para>
+        </para>
+
+        <para>
+        </para>
+        
+    </section>
+
     
     </chapter>
 </book>
