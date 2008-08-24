@@ -223,13 +223,52 @@
             קוראים "a" (קיצור של "Anchor") והיא מקבלת תכונה בשם
             <code xml:lang="en">href</code> כפרמטר. הבא נראה אותה בפעולה:
         </para>
+[% embed_sample("a-href-sample") %]
+
+        <mediaobject>
+            <imageobject>
+            <imagedata fileref="images/a-href-sample.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
         <para>
+            כפי שניתן לראות מה שבתוך תגיות ה-"a" סומן כקישור, כאשר הקישור
+            מצביע למה שבתוך תכונת ה-"href". ראוי לציין שכאשר יש לסגור מספר
+            תגים יש לסגור אותם בסדר הפוך מהסדר בו הם נפתחו, באופן כזה
+            שיהיה לנו עץ מקונן.
         </para>
+
         <para>
+            לסיום החלק הזה, אנו נשחק במספר תגיות נוספות לשם עיצוב הדף:
         </para>
+
+        <orderedlist>
+
+            <listitem>
+                <para>
+                    <code xml:lang="en">&lt;b&gt;</code> - לשם הפיכת
+                    טקסט למעובה. ("bold")
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    <code xml:lang="en">&lt;i&gt;</code> - לשם הפיכת
+                    טקסט למוטה. ("italics")
+                </para>
+            </listitem>
+            
+        </orderedlist>
         <para>
+            הנה הדוגמה:
         </para>
+[% embed_sample("bold-and-italics-sample") %]
         
+        <mediaobject>
+            <imageobject>
+            <imagedata fileref="images/bold-and-italics-sample.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
     </section>
 
     
