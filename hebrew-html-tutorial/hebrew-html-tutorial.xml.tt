@@ -157,6 +157,30 @@ This is the second line.
 	    </imageobject>
 	</mediaobject>
 	
+	<para>
+	ניתן לראות שהדפדפן התעלם משבירת השורה השנייה. מה קורה אם נשבור פסקאות? שמרו טקסט
+	זה לתוך קובץ עם סיומת <filename xml:lang="en">.html</filename>:
+	</para>
+
+	    <programlisting xml:lang="en">
+<![CDATA[
+First Paragraph: my web-page is your web-page.
+
+
+Second paragraph: this is the second paragraph.
+]]>
+	    </programlisting>
+
+	<para>
+	שוב פעם נקבל את הכל בשורה אחת: 
+	</para>	
+
+	<mediaobject>
+	    <imageobject>
+		<imagedata fileref="images/two-paragraphs-without-markup.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
+	
 	</section>
     
     </chapter>

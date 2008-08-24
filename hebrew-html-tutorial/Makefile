@@ -32,7 +32,10 @@ upload: html-xsl
 edit:
 	gvim $(DOC).xml.tt style.css Summary.txt
 
-IMAGES = first-document.png
+IMAGES_PROTO = images/first-document.png \
+			   images/two-paragraphs-without-markup.png
+
+IMAGES = $(patsubst images/%,%,$(IMAGES_PROTO))
 
 DEST_IMAGES_DIR = $(DEST_DIR)/images
 
