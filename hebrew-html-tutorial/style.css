@@ -10,4 +10,5 @@ a:hover { background-color : palegreen; }
     font-family: Times New Roman, Times, Serif;
     text-align:left;
     direction: ltr;
+    unicode-bidi: embed;
 }
