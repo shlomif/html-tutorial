@@ -9,8 +9,8 @@ DOCMAKE_SGML_PATH = ./sgml/shlomif-docbook/
 
 XMLTO_PARAMS = --stringparam "docmake.output.path_to_root=$(shell perl -e '$$_=shift;$$c=tr[/][];print "../"x($$c+2)' $(call get,DOCBOOK_DIRS_MAP,$(patsubst $(DOCBOOK_INDIVIDUAL_XHTML_DIR)/%,%,$@)))"
 
-$(DOC).xml: $(DOC).xml.tt
-	ttml -o $@ $<
+$(DOC).xml: $(DOC).xml.tt Render-TT2-to-Docbook.pl
+	perl Render-TT2-to-Docbook.pl
 
 validate: $(DOC).xml
 	xmllint --relaxng http://www.docbook.org/xml/5.0b1/rng/docbook.rng $<

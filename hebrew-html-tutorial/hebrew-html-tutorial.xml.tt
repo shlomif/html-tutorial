@@ -136,13 +136,8 @@
 		שמסבירות כיצד יש לפרש את הטקסט. את
 		המסמך הראשון ניתן לכתוב למשל כך:
 	    </para>
-	    
-	    <programlisting xml:lang="en">
-<![CDATA[
-Hello, World! This is my first HTML Document.
-This is the second line.
-]]>
-	    </programlisting>
+
+        [% embed_sample("first-document") %]
     
 	<para>
 	אם תשמרו מסמך זה לתוך קובץ עם סיומת 
@@ -162,14 +157,7 @@ This is the second line.
 	זה לתוך קובץ עם סיומת <filename xml:lang="en">.html</filename>:
 	</para>
 
-	    <programlisting xml:lang="en">
-<![CDATA[
-First Paragraph: my web-page is your web-page.
-
-
-Second paragraph: this is the second paragraph.
-]]>
-	    </programlisting>
+[% embed_sample("two-paragraphs-without-markup") %]
 
 	<para>
 	שוב פעם נקבל את הכל בשורה אחת: 
@@ -213,31 +201,27 @@ Second paragraph: this is the second paragraph.
             (<quote xml:lang="en"><emphasis role="bold">P</emphasis>aragraph</quote>):
         </para>
 
-	    <programlisting xml:lang="en">
-<![CDATA[
-<p>
-First paragraph - for real this time.
-</p>
-
-<p>
-Second paragraph - La la la la la.
-</p>
-]]>
-	    </programlisting>
-        
+[% embed_sample("two-paragraphs-with-p-tags") %]       
         <para>
             ואנו מקבלים את:
         </para>
 
-	<mediaobject>
-	    <imageobject>
-		<imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
-	    </imageobject>
-	</mediaobject>
+        <mediaobject>
+            <imageobject>
+            <imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
 	        
         <para>
+            כפי שניתן לראות הפעם קיבלנו שתי פיסקאות נפרדות. זאת משום שהדפדפן
+            זיהה את התגית <code xml:lang="en">&lt;p&gt;</code> כתוחמת של
+            פיסקה. כל מה שבין התגית הפותחת לסוגרת נחשב כתוכן של הפסקה. 
         </para>
+
         <para>
+            עכשיו בו נכיר תגית נוספת המאפשרת לנו לסמן טקסט כקישור. לתגית
+            קוראים "a" (קיצור של "Anchor") והיא מקבלת תכונה בשם
+            <code xml:lang="en">href</code> כפרמטר. הבא נראה אותה בפעולה:
         </para>
         <para>
         </para>
@@ -251,5 +235,5 @@ Second paragraph - La la la la la.
     
     </chapter>
 </book>
-[% # vim:ft=tt2 
+[% # vim:ft=docbkxml 
 %]
