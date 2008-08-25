@@ -12,3 +12,10 @@ a:hover { background-color : palegreen; }
     direction: ltr;
     unicode-bidi: embed;
 }
+pre.programlisting
+{
+    font-family: Courier New, Courier;
+    font-size:10pt;
+    border: green solid 3pt;
+    padding: 0.5em;
+}
