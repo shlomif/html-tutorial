@@ -265,13 +265,26 @@
 [% embed_sample("bold-and-italics-sample") %]
         
         <mediaobject>
-            <imageobject>
+           <imageobject>
             <imagedata fileref="images/bold-and-italics-sample.png" format="PNG"/>
             </imageobject>
         </mediaobject>
+
+        <para>
+        </para>
+
     </section>
 
-    
+    <para>
+        כפי שניתן לראות, הטקסט המוכל בתוך התגיות עוצב בהתאם
+        להן. 
+    </para>
+
+    <para>
+        בפרק הבא נראה כיצד לכתוב מסמך HTML מלא באופן כזה שיהיה
+        מסמך תקין העובר ולידציה.
+    </para>
+
     </chapter>
 </book>
 [% # vim:ft=docbkxml 
