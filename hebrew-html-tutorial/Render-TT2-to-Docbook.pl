@@ -34,9 +34,24 @@ $text
 EOF
 }
 
+sub start_tag
+{
+    my $id = shift;
+
+    return qq{<code xml:lang="en">&lt;$id&gt;</code>};
+}
+
+sub end_tag
+{
+    my $id = shift;
+    return start_tag("/$id");
+}
+
 my $vars =
 {
     embed_sample => \&embed_sample,
+    stag => \&start_tag,
+    etag => \&end_tag,
 };
 
 $tt->process(
