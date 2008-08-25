@@ -282,6 +282,31 @@
 
     </section>
 
+    <section xml:id="writing-complete-HTML-documents">
+        <info>
+            <title>כתיבת מסמכי HTML מלאים.</title>
+        </info>
+        <para>
+            עד עכשיו, מסמכי ה-HTML שכתבנו לא היו מלאים וככאלה לא היו
+            עוברים <emphasis role="bold">ולידציה</emphasis>. כדי שמסמכי
+            HTML יהיו תקינים הם צריכים להיות במבנה מוגדר, עם רישא
+            וסיפא מתאימים. בו נראה וננתח דוגמה למסמך HTML מלא כזה:
+        </para>
+
+        [% embed_sample("complete-example-1") %]
+
+        <para>
+            היא נראית כך:
+        </para>
+
+        <mediaobject>
+           <imageobject>
+            <imagedata fileref="images/complete-example-1.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+
+    </section>
+
     </chapter>
 </book>
 [% # vim:ft=docbkxml 
