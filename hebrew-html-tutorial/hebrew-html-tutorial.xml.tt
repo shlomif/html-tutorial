@@ -460,6 +460,39 @@
             </mediaobject>
         </section>
     </section>
+    <section xml:id="more-HTML-tags">
+        <info>
+            <title>תגי HTML נוספים</title>
+        </info>
+        <para>
+            בפרק זה נכיר תגי HTML נוספים ושימושיים.
+        </para>
+        <section xml:id="headings">
+            <info>
+                <title>כותרות - h1, h2, h3</title>
+            </info>
+            <para>
+                ראינו כבר את הכותרת [% stag("h1") %], אבל יש גם את
+                [% stag("h2") %] וכן הלאה עד [% stag("h6") %]. ככל
+                שהמספר גדול יותר כך הכותרת פחותה יותר בערכה. רצוי לחלק
+                את מסמך ה-HTML לכותרות באופן כזה. בו נראה דוגמה למסמך
+                המחולק לחלקים בעזרת כותרותיו:
+            </para>
+
+            [% embed_sample("h1-h2-example") %]
+
+            <para>
+                וכך זה נראה:
+            </para>
+
+            <mediaobject>
+                <imageobject>
+                <imagedata fileref="images/h1-h2-example.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
+        </section>
+
+    </section>
 
     </chapter>
 </book>

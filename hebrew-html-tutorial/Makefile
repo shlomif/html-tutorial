@@ -38,7 +38,9 @@ IMAGES_PROTO = images/first-document.png \
 			   images/a-href-sample.png \
 			   images/bold-and-italics-sample.png \
 			   images/complete-example-1.png \
-			   images/validates-screenshot.png
+			   images/validates-screenshot.png \
+			   images/h1-h2-example.png
+
 
 IMAGES = $(patsubst images/%,%,$(IMAGES_PROTO))
 
