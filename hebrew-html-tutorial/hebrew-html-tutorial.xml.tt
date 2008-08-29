@@ -453,11 +453,11 @@
                 ככה נראה אימות של דף כתקין בעזרת המאמת:
             </para>
 
-	<mediaobject>
-	    <imageobject>
-		<imagedata fileref="images/validates-screenshot.png" format="PNG"/>
-	    </imageobject>
-	</mediaobject>
+            <mediaobject>
+                <imageobject>
+                <imagedata fileref="images/validates-screenshot.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
         </section>
     </section>
 
