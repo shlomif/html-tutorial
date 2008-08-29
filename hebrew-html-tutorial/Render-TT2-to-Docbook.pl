@@ -47,11 +47,19 @@ sub end_tag
     return start_tag("/$id");
 }
 
+sub standalone_tag
+{
+    my $id = shift;
+    return start_tag("$id /");
+}
+
 my $vars =
 {
     embed_sample => \&embed_sample,
     stag => \&start_tag,
     etag => \&end_tag,
+    # Only tag.
+    otag => \&standalone_tag,
 };
 
 $tt->process(

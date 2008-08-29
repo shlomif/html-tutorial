@@ -490,6 +490,25 @@
                 <imagedata fileref="images/h1-h2-example.png" format="PNG"/>
                 </imageobject>
             </mediaobject>
+
+            <para>
+                כפי שניתן לראות הכותרות בעלות המספר הגבוה יותר, קטנות
+                יותר ובכך פחותות בחשיבותן.
+            </para>
+
+        </section>
+
+        <section xml:id="line-break-tag">
+            <info>
+                <title>תגית שבירת השורה - &lt;br /&gt;</title>
+            </info>
+            <para>
+                ניתן להשתמש בתגית [% otag("br") %] )תגית העומדת בפני
+                עצמה ואינה מקבלת פרמטרים( כדי לשבור את
+                השורה, ולהתחיל שורה חדשה באמצע פיסקה. לא רצוי להשתמש בה
+                פעמיים בשביל להפריד בין פסקאות, וכן רצוי להימנע משימוש מיותר
+                בתגית זאת.
+            </para>
         </section>
 
     </section>
