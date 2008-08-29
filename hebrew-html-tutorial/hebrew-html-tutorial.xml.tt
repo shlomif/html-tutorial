@@ -444,6 +444,20 @@
                     </para>
                 </listitem>
             </orderedlist>
+            <para>
+                במידה שדף ה-HTML זמין באינטרנט בפומבי, ניתן לשלוח קישור
+                אליו למאמת. אחרת, ניתן להעלות את התוכן המקומי למאמת
+                כדי לקבל עליו דו"ח. 
+            </para>
+            <para>
+                ככה נראה אימות של דף כתקין בעזרת המאמת:
+            </para>
+
+	<mediaobject>
+	    <imageobject>
+		<imagedata fileref="images/validates-screenshot.png" format="PNG"/>
+	    </imageobject>
+	</mediaobject>
         </section>
     </section>
 
