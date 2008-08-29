@@ -399,9 +399,52 @@
             </listitem>
         </orderedlist>
 
-        <para>
-            אז זה הכל! כעת בואו נכיר מספר תגים שימושיים נוספים.
-        </para>
+        <section id="validate-your-documents">
+            <info>
+                <title>כדאי לאמת את המסמכים שלכם</title>
+            </info>
+
+            <para>
+                כדי לוודא שהמסמך שכתבתם (או חוללתם) הוא תקין,
+                רצוי לבצע לו <emphasis role="bold">אימות 
+                    (Validation)</emphasis> באמצעות מאמתים מקוונים:
+            </para>
+
+            <orderedlist>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://validator.w3.org/">האמאת
+                            של ה-W3C</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://htmlhelp.com/tools/validator/">האמאת
+                            של ה-Web Design Group</link>
+                    </para>
+                </listitem>
+            </orderedlist>
+
+            <para>
+                חשוב לבצע אימות כדי לוודא שטעויות בדפים אינן גוררות
+                התנהגות לא רצויה של הדפדפנים השונים. עוד על המוטיבציה
+                לאימות, ניתן למצוא בדפים הבאים:
+            </para>
+
+            <orderedlist>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://www.shlomifish.org/philosophy/by-others/mashhoor--10-reasons--hebrew.html">10 סיבות שבגללן חברות צריכות
+                        לשקול ללכת לפי התקנים של הוו'ב</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        <link xlink:href="http://www.shlomifish.org/lecture/LAMP/slides/compatibility/">תכן לתאימות</link> - מהרצאה שכתבתי.
+                    </para>
+                </listitem>
+            </orderedlist>
+        </section>
     </section>
 
     </chapter>
