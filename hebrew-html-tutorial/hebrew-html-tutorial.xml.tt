@@ -121,15 +121,15 @@
             <title>HTML בסיסי</title>
         </info>
 	
-	<para>
-	בפרק זה נלמד כיצד לכתוב HTML בסיסי.
-	</para>
-	
     <section xml:id="first-document">
         <info>
             <title>מסמך ה-HTML הראשון שלך</title>
         </info>
-	    
+
+        <para>
+        בפרק זה נלמד כיצד לכתוב HTML בסיסי.
+        </para>
+        
 	    <para>
 		HTML
 		הינו למעשה טקסט פשוט רק עם הוראות
@@ -146,7 +146,8 @@
 	כזה בדפדפן:
 	</para>
 
-	<mediaobject>
+    <mediaobject>
+        <alt>מסמך ה-HTML הראשון</alt>
 	    <imageobject>
 		<imagedata fileref="images/first-document.png" format="PNG"/>
 	    </imageobject>
@@ -164,6 +165,7 @@
 	</para>	
 
 	<mediaobject>
+	    <alt>שתי פסקאות ללא סימון</alt>
 	    <imageobject>
 		<imagedata fileref="images/two-paragraphs-without-markup.png" format="PNG"/>
 	    </imageobject>
@@ -207,6 +209,7 @@
         </para>
 
         <mediaobject>
+	    <alt>שתי פסקאות ללא תגיות P</alt>
             <imageobject>
             <imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
             </imageobject>
@@ -226,6 +229,7 @@
 [% embed_sample("a-href-sample") %]
 
         <mediaobject>
+	    <alt>דוגמה לתגית "a"</alt>
             <imageobject>
             <imagedata fileref="images/a-href-sample.png" format="PNG"/>
             </imageobject>
@@ -265,6 +269,7 @@
 [% embed_sample("bold-and-italics-sample") %]
         
         <mediaobject>
+	    <alt>דוגמה לגופן מעובה ונטוי</alt>
            <imageobject>
             <imagedata fileref="images/bold-and-italics-sample.png" format="PNG"/>
             </imageobject>
@@ -300,6 +305,7 @@
         </para>
 
         <mediaobject>
+	    <alt>דוגמה מלאה מספר 1</alt>
            <imageobject>
             <imagedata fileref="images/complete-example-1.png" format="PNG"/>
             </imageobject>
@@ -454,6 +460,7 @@
             </para>
 
             <mediaobject>
+		<alt>אימות של הדף</alt>
                 <imageobject>
                 <imagedata fileref="images/validates-screenshot.png" format="PNG"/>
                 </imageobject>
@@ -486,6 +493,7 @@
             </para>
 
             <mediaobject>
+	        <alt>דוגמה עם תגיות h1 ו-h2</alt>
                 <imageobject>
                 <imagedata fileref="images/h1-h2-example.png" format="PNG"/>
                 </imageobject>

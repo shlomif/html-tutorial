@@ -13,7 +13,7 @@ $(DOC).xml: $(DOC).xml.tt Render-TT2-to-Docbook.pl
 	perl Render-TT2-to-Docbook.pl
 
 validate: $(DOC).xml
-	xmllint --relaxng http://www.docbook.org/xml/5.0b1/rng/docbook.rng $<
+	xmllint --relaxng http://www.docbook.org/xml/5.0/rng/docbook.rng $<
 
 html-xsl: $(DEST_INDEX) $(DOC)/style.css put-images
 
