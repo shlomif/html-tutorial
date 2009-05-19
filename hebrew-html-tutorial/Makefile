@@ -12,8 +12,13 @@ XMLTO_PARAMS = --stringparam "docmake.output.path_to_root=$(shell perl -e '$$_=s
 $(DOC).xml: $(DOC).xml.tt Render-TT2-to-Docbook.pl
 	perl Render-TT2-to-Docbook.pl
 
-validate: $(DOC).xml
+validate: validate-jing
+
+validate-xmllint: $(DOC).xml
 	xmllint --relaxng http://www.docbook.org/xml/5.0/rng/docbook.rng $<
+
+validate-jing: $(DOC).xml
+	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
 
 html-xsl: $(DEST_INDEX) $(DOC)/style.css put-images
 
