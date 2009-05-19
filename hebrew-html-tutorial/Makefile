@@ -22,8 +22,15 @@ validate-jing: $(DOC).xml
 
 html-xsl: $(DEST_INDEX) $(DOC)/style.css put-images
 
+# XSL_STYLESHEETS_PATH := /usr/share/sgml/docbook/xsl-stylesheets-db5-1.73.2/xhtml
+
+# This is to use the docbook-xsl-snapshot which should have a better
+# support for xml:lang, etc. See:
+# https://sourceforge.net/tracker/?func=detail&atid=373750&aid=1993833&group_id=21935
+XSL_STYLESHEETS_PATH := $(HOME)/Download/unpack/file/docbook/docbook-xsl-snapshot/xhtml
+
 $(DEST_INDEX): $(DOC).xml custom.xsl
-	xsltproc --path /usr/share/sgml/docbook/xsl-stylesheets-db5-1.73.2/xhtml -o $@ custom.xsl $<
+	xsltproc --path $(XSL_STYLESHEETS_PATH) -o $@ custom.xsl $<
 
 $(DOC)/style.css: style.css
 	cp -f $< $@
