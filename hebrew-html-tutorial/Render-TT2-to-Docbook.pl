@@ -10,13 +10,13 @@ my $tt = Template->new({
 }) 
     or die "$Template::ERROR\n";
 
-sub embed_sample
+sub embed_sample_generic
 {
     my ($sample_id) = @_;
 
     my $text;
     {
-        open my $in, "<", "samples/$sample_id.html"
+        open my $in, "<", "samples/$sample_id"
             or die "Could not open $sample_id in embed_sample()";
         
         local $/;
@@ -32,6 +32,20 @@ $text
 </programlisting>
 
 EOF
+}
+
+sub embed_sample
+{
+    my $sample = shift;
+
+    return embed_sample_generic("$sample.html");
+}
+
+sub embed_xhtml_sample
+{
+    my $sample = shift;
+
+    return embed_sample_generic("$sample.xhtml");
 }
 
 sub start_tag
@@ -56,6 +70,7 @@ sub standalone_tag
 my $vars =
 {
     embed_sample => \&embed_sample,
+    embed_xhtml_sample => \&embed_xhtml_sample,
     stag => \&start_tag,
     etag => \&end_tag,
     # Only tag.
