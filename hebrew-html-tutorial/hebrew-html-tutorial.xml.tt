@@ -547,7 +547,7 @@
                 לדף. בו נעבור על מה שניתן לעשות.
              </para>
 
-             <section xml:id="head-title-elemnt">
+             <section xml:id="head-title-element">
                 <info>
                     <title>כותרת גלובלית למסמך באמצעות התגית title</title>
                 </info>
@@ -575,6 +575,31 @@
                 
                 [% embed_xhtml_sample("with-title") %]
                 
+             </section>
+
+             <section xml:id="head-link-element">
+                <info>
+                    <title>קישורים ושיוכים גלובליים למסמך בעזרת התגית link</title>
+                </info>
+                
+                <para>
+                אחד הדברים שניתן לשים ב-head הוא 
+                <emphasis role="bold">קישורים גלובליים</emphasis>
+                או מה שהם ליתר דיוק, בטרמינולגיה שלי, שיוכים (associations). בניגוד לקישוריי
+                ה-HTML הרגילים שמשויכים רק עם חלק מהמסמך וניתנים ללחיצה בתוך גוף המסמך, הרי
+                שהקישורים הגלובליים משפיעים על כך המסמך או משייכים לו משאב אחר ברשת.
+                </para>
+                
+                <para>
+                לדוגמה, אם נרצה לשייך גליון סגנון (stylesheet) מסוג CSS (= Cascading Style Sheets)
+                (אנו נלמד CSS מעט בהמשך) הרי שנוכל לעשות זאת על-ידי כתיבת הקוד הבא בתוך אלמנט
+                ה-head:
+                </para>
+                
+                <para xml:lang="en">
+                    <code>&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;</code>
+                </para>              
+               
              </section>
 
         </section>

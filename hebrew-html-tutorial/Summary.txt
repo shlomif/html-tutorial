@@ -18,6 +18,11 @@
 - The <head> element.
     - <title>
     - <link rel="" />"
+        - CSS
+        - JS
+        - next/prev/up/etc.
+        - RSS/Atom
+        - 
     - <style>
 
 === End of Part 1 ===
