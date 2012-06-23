@@ -42,7 +42,7 @@ firefox: html-xsl
 	mozilla-firefox $(DEST_INDEX)
 
 upload: html-xsl
-	rsync -a -v --progress $(DEST_DIR) $${HOMEPAGE_SSH_PATH}/hebrew-html-tutorial-brk800/
+	rsync -a -v --progress $(DEST_DIR) Summary.txt $${HOMEPAGE_SSH_PATH}/hebrew-html-tutorial-brk800/
 
 edit:
 	gvim $(DOC).xml.tt style.css Summary.txt
