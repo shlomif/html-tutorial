@@ -44,6 +44,9 @@ firefox: html-xsl
 upload: html-xsl
 	rsync -a -v --progress $(DEST_DIR) Summary.txt $${HOMEPAGE_SSH_PATH}/hebrew-html-tutorial-brk800/
 
+upload_remote: html-xsl
+	rsync -a -v --progress $(DEST_DIR) Summary.txt $${__HOMEPAGE_REMOTE_PATH}/hebrew-html-tutorial-brk800/
+
 edit:
 	gvim $(DOC).xml.tt style.css Summary.txt
 
@@ -54,7 +57,8 @@ IMAGES_PROTO = images/first-document.png \
 			   images/bold-and-italics-sample.png \
 			   images/complete-example-1.png \
 			   images/validates-screenshot.png \
-			   images/h1-h2-example.png
+			   images/h1-h2-example.png \
+			   images/with-head-style-tag.png
 
 
 IMAGES = $(patsubst images/%,%,$(IMAGES_PROTO))
