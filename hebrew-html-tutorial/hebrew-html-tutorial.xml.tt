@@ -405,7 +405,7 @@
             </listitem>
         </orderedlist>
 
-        <section id="validate-your-documents">
+        <section xml:id="validate-your-documents">
             <info>
                 <title>כדאי לאמת את המסמכים שלכם</title>
             </info>
