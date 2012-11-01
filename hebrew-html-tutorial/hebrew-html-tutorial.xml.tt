@@ -641,7 +641,19 @@
              </para>
          </section>
 
-    </section>
+     </section>
+
+     <section xml:id="basic_html_conclusion">
+         <info>
+             <title>סיכום הפרק</title>
+         </info>
+
+         <para>
+            בפרק זה למדנו כיצד לכתוב XHTML בסיסי, ועדיין תקין ושימושי.
+            בפרק הבא נלמד מעט על אודות CSS שהיא השפה בה משתמשים לעצב את
+            HTML ותסדירים אחרים.
+         </para>
+     </section>
 
     </chapter>
 </book>
