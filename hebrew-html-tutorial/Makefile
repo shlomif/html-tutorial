@@ -41,7 +41,9 @@ $(DOC)/style.css: style.css
 firefox: html-xsl
 	mozilla-firefox $(DEST_INDEX)
 
-upload: html-xsl
+upload: upload_local upload_remote
+
+upload_local: html-xsl
 	rsync -a -v --progress $(DEST_DIR) Summary.txt $${HOMEPAGE_SSH_PATH}/hebrew-html-tutorial-brk800/
 
 upload_remote: html-xsl
