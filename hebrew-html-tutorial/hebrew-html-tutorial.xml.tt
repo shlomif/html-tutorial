@@ -43,7 +43,7 @@
                 </listitem>
                 <listitem>
                     <para>
-                        The 
+                        The
                         <link
                             xlink:href="http://www.opensource.org/licenses/mit-license.php">MIT
                             X11 License</link>.
@@ -97,7 +97,7 @@
 <listitem>
 <para>
 ידע בסיס בעריכת טקסט פשוט. לא מדובר בשימוש ב-וורד, אלא בעורך טקסט כמו Notepad.
-מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו 
+מומלץ בחום שימוש בעורך טקסט מתקדם יותר כמו
 <link xlink:href="http://notepad-plus.sourceforge.net/"><productname xml:lang="en">Notepad++</productname></link>
 או תחליף אחר הולם לסביבת העבודה החביבה עליכם.
 </para>
@@ -120,7 +120,7 @@
         <info>
             <title>HTML בסיסי</title>
         </info>
-	
+
     <section xml:id="first-document">
         <info>
             <title>מסמך ה-HTML הראשון שלך</title>
@@ -129,7 +129,7 @@
         <para>
         בפרק זה נלמד כיצד לכתוב HTML בסיסי.
         </para>
-        
+
 	    <para>
 		HTML
 		הינו למעשה טקסט פשוט רק עם הוראות
@@ -138,9 +138,9 @@
 	    </para>
 
         [% embed_sample("first-document") %]
-    
+
 	<para>
-	אם תשמרו מסמך זה לתוך קובץ עם סיומת 
+	אם תשמרו מסמך זה לתוך קובץ עם סיומת
 	<filename xml:lang="en">.html</filename>
 	ותפתחו אותו באמצעות הדפדפן, אז תקבלו משהו
 	כזה בדפדפן:
@@ -152,7 +152,7 @@
 		<imagedata fileref="images/first-document.png" format="PNG"/>
 	    </imageobject>
 	</mediaobject>
-	
+
 	<para>
 	ניתן לראות שהדפדפן התעלם משבירת השורה השנייה. מה קורה אם נשבור פסקאות? שמרו טקסט
 	זה לתוך קובץ עם סיומת <filename xml:lang="en">.html</filename>:
@@ -161,8 +161,8 @@
 [% embed_sample("two-paragraphs-without-markup") %]
 
 	<para>
-	שוב פעם נקבל את הכל בשורה אחת: 
-	</para>	
+	שוב פעם נקבל את הכל בשורה אחת:
+	</para>
 
 	<mediaobject>
 	    <alt>שתי פסקאות ללא סימון</alt>
@@ -170,40 +170,40 @@
 		<imagedata fileref="images/two-paragraphs-without-markup.png" format="PNG"/>
 	    </imageobject>
 	</mediaobject>
-	
+
 	<para>
 	מה שקרה הוא שבעוד שהטקסט הוא טקסט, הדפדפן זקוק לתגיות HTML (HTML Tags) כדי
 	לדעת כיצד פרמט אותו. אנו נראה מספר תגיות HTML בסיסיות בחלק הבא.
 	</para>
-	
+
 	</section>
-	
+
     <section xml:id="basic-HTML-tags">
         <info>
             <title>תגיות HTML בסיסיות</title>
         </info>
 
         <para>
-            תגיות HTML בד"כ באות כתגית פותחת ובתוחה טקסט או תגיות נוספות 
-            ותגית סוגרת. התגית הפותחת המתחילה בסימן "קטן 
-            מ" )<code xml:lang="en">&lt;</code>( ואחריה מזהה התגית, ואחריו 
+            תגיות HTML בד"כ באות כתגית פותחת ובתוחה טקסט או תגיות נוספות
+            ותגית סוגרת. התגית הפותחת המתחילה בסימן "קטן
+            מ" )<code xml:lang="en">&lt;</code>( ואחריה מזהה התגית, ואחריו
             תכונות )"Attributes"( הבאות כמזהה, כסימן שווה וכערך הבא בתוך
-            מרכאות. לבסוף באה סוף התגית הפותחת כסימן גדול-מ 
+            מרכאות. לבסוף באה סוף התגית הפותחת כסימן גדול-מ
             )<code xml:lang="en">&gt;</code>( .
         </para>
 
         <para>
-            תגית סוגרת הינה פשוט 
+            תגית סוגרת הינה פשוט
             <code xml:lang="en">&lt;/tag-identifier&gt;</code> .
-        </para> 
+        </para>
 
         <para>
-            הנה דוגמה להמחשה באמצעות התגית 
+            הנה דוגמה להמחשה באמצעות התגית
             <code xml:lang="en">&lt;p&gt;</code> המייצגת פיסקה
             (<quote xml:lang="en"><emphasis role="bold">P</emphasis>aragraph</quote>):
         </para>
 
-[% embed_sample("two-paragraphs-with-p-tags") %]       
+[% embed_sample("two-paragraphs-with-p-tags") %]
         <para>
             ואנו מקבלים את:
         </para>
@@ -214,11 +214,11 @@
             <imagedata fileref="images/two-paragraphs-with-p-tags.png" format="PNG"/>
             </imageobject>
         </mediaobject>
-	        
+
         <para>
             כפי שניתן לראות הפעם קיבלנו שתי פיסקאות נפרדות. זאת משום שהדפדפן
             זיהה את התגית <code xml:lang="en">&lt;p&gt;</code> כתוחמת של
-            פיסקה. כל מה שבין התגית הפותחת לסוגרת נחשב כתוכן של הפסקה. 
+            פיסקה. כל מה שבין התגית הפותחת לסוגרת נחשב כתוכן של הפסקה.
         </para>
 
         <para>
@@ -261,13 +261,13 @@
                     טקסט למוטה. ("italics")
                 </para>
             </listitem>
-            
+
         </orderedlist>
         <para>
             הנה הדוגמה:
         </para>
 [% embed_sample("bold-and-italics-sample") %]
-        
+
         <mediaobject>
 	    <alt>דוגמה לגופן מעובה ונטוי</alt>
            <imageobject>
@@ -277,7 +277,7 @@
 
          <para>
             כפי שניתן לראות, הטקסט המוכל בתוך התגיות עוצב בהתאם
-            להן. 
+            להן.
         </para>
 
         <para>
@@ -345,7 +345,7 @@
                 </para>
 
                 <para>
-                    התכונות האחרות ("lang") מצהירות על שפת המסמך, במקרה 
+                    התכונות האחרות ("lang") מצהירות על שפת המסמך, במקרה
                     שלנו אנגלית אמריקאית. ראוי לציין שכדאי שהן lang והן
                     xml:lang תקבענה ביחד.
                 </para>
@@ -398,7 +398,7 @@
             <listitem>
                 <para>
                     האלמנט [% stag("h1") %] מכיל כותרת המוצגת בגוף הטקסט. יש
-                    גם את [% stag("h2") %], [% stag("h3") %] עד 
+                    גם את [% stag("h2") %], [% stag("h3") %] עד
                     [% stag("h6") %]. מומלץ לחלק את המסמך לחלקים על-ידי
                     הכותרות כך שידעו מה משמעות כל חלק.
                 </para>
@@ -412,7 +412,7 @@
 
             <para>
                 כדי לוודא שהמסמך שכתבתם (או חוללתם) הוא תקין,
-                רצוי לבצע לו <emphasis role="bold">אימות 
+                רצוי לבצע לו <emphasis role="bold">אימות
                     (Validation)</emphasis> באמצעות מאמתים מקוונים:
             </para>
 
@@ -453,7 +453,7 @@
             <para>
                 במידה שדף ה-HTML זמין באינטרנט בפומבי, ניתן לשלוח קישור
                 אליו למאמת. אחרת, ניתן להעלות את התוכן המקומי למאמת
-                כדי לקבל עליו דו"ח. 
+                כדי לקבל עליו דו"ח.
             </para>
             <para>
                 ככה נראה אימות של דף כתקין בעזרת המאמת:
@@ -540,7 +540,7 @@
                 <title>השימוש בתגית head</title>
             </info>
             <para>
-                מטרת התגית <code>&lt;head&gt;...&lt;/head&gt;</code>, שכבר ראינו 
+                מטרת התגית <code>&lt;head&gt;...&lt;/head&gt;</code>, שכבר ראינו
                 בדוגמאות קודמות היא לספק מטה-מידע (meta-data) עבור המסמך. ניתן
                 בעזרתה לקבוע קישורים גלובליים למסמך (כמו גליון-סגנון, המסמך הבא,
                 המסמך הקודם, הזנות ווב של RSS או Atom, ) וכו לשייך סגנונות היחודיים
@@ -552,7 +552,7 @@
                     <title>כותרת גלובלית למסמך באמצעות התגית title</title>
                 </info>
                 <para>
-                    התגית title הנמצאת בתוך האלמנט 
+                    התגית title הנמצאת בתוך האלמנט
                     <code>&lt;head&gt;...&lt;/head&gt;</code>
                     (ורצוי שתבוא מוקדם ככל
                     האפשר) מאפשרת לקבוע למסמך כותרת גלובלית. זאת בדומה לכותרת של
@@ -572,34 +572,34 @@
                 <para>
                     הנה דוגמה קטנה:
                 </para>
-                
+
                 [% embed_xhtml_sample("with-title") %]
-                
+
              </section>
 
              <section xml:id="head-link-element">
                 <info>
                     <title>קישורים ושיוכים גלובליים למסמך בעזרת התגית link</title>
                 </info>
-                
+
                 <para>
-                אחד הדברים שניתן לשים ב-head הוא 
+                אחד הדברים שניתן לשים ב-head הוא
                 <emphasis role="bold">קישורים גלובליים</emphasis>
                 או מה שהם ליתר דיוק, בטרמינולגיה שלי, שיוכים (associations). בניגוד לקישוריי
                 ה-HTML הרגילים שמשויכים רק עם חלק מהמסמך וניתנים ללחיצה בתוך גוף המסמך, הרי
                 שהקישורים הגלובליים משפיעים על כך המסמך או משייכים לו משאב אחר ברשת.
                 </para>
-                
+
                 <para>
                 לדוגמה, אם נרצה לשייך גליון סגנון (stylesheet) מסוג CSS (= Cascading Style Sheets)
                 (אנו נלמד CSS מעט בהמשך) הרי שנוכל לעשות זאת על-ידי כתיבת הקוד הבא בתוך אלמנט
                 ה-head:
                 </para>
-                
+
                 <para xml:lang="en">
                     <code>&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;</code>
-                </para>              
-               
+                </para>
+
              </section>
 
         </section>
@@ -608,5 +608,5 @@
 
     </chapter>
 </book>
-[% # vim:ft=docbkxml 
+[% # vim:ft=docbkxml
 %]
