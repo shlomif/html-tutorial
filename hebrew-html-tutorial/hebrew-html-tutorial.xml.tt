@@ -307,9 +307,9 @@
         </para>
 
         <mediaobject>
-	    <alt>דוגמה מלאה מספר 1</alt>
-           <imageobject>
-            <imagedata fileref="images/complete-example-1.png" format="PNG"/>
+            <alt>דוגמה מלאה מספר 1</alt>
+            <imageobject>
+                <imagedata fileref="images/complete-example-1.png" format="PNG"/>
             </imageobject>
         </mediaobject>
 
@@ -462,7 +462,7 @@
             </para>
 
             <mediaobject>
-		<alt>אימות של הדף</alt>
+                <alt>אימות של הדף</alt>
                 <imageobject>
                 <imagedata fileref="images/validates-screenshot.png" format="PNG"/>
                 </imageobject>
@@ -623,7 +623,7 @@
              </para>
 
              <mediaobject>
-             <alt>דוגמה עם תגיות h1 ו-h2</alt>
+             <alt>דוגמה לשימוש בתגית style</alt>
              <imageobject>
                 <imagedata fileref="images/with-head-style-tag.png" format="PNG"/>
                 </imageobject>
