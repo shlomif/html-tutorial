@@ -3,7 +3,7 @@
     - a Note about Hebrew.
 - The <p> tag.
 - Skeleton of an HTML document.
-    - <html>, <body>, 
+    - <html>, <body>,
     - The DOCTYPE
     - The xml declaration.
 - The <a> tag.
@@ -22,7 +22,7 @@
         - JS
         - next/prev/up/etc.
         - RSS/Atom
-        - 
+        -
     - <style>
 
 === End of Part 1 ===
@@ -34,7 +34,7 @@
 * Simple CSS Declarations.
 
     h1 { color: green; }
-    
+
 * CSS Attributes:
     - color
     - background-color
@@ -67,7 +67,7 @@
 - Child, descendant, etc. selectors
     - #nav .link
     - #nav > .link
-    - 
+    -
 
 === End of Part 4 ===
 

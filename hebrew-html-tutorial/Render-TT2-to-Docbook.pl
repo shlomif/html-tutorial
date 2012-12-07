@@ -7,7 +7,7 @@ use Template;
 
 my $tt = Template->new({
     INTERPOLATE  => 1,
-}) 
+})
     or die "$Template::ERROR\n";
 
 sub embed_sample_generic
@@ -18,7 +18,7 @@ sub embed_sample_generic
     {
         open my $in, "<", "samples/$sample_id"
             or die "Could not open $sample_id in embed_sample()";
-        
+
         local $/;
         $text = <$in>;
         close($in);
@@ -79,7 +79,7 @@ my $vars =
 
 $tt->process(
     "hebrew-html-tutorial.xml.tt",
-    $vars, 
+    $vars,
     "hebrew-html-tutorial.xml",
 )
     or die $tt->error(), "\n";
