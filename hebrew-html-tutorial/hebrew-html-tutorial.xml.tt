@@ -139,7 +139,7 @@
 		המסמך הראשון ניתן לכתוב למשל כך:
 	    </para>
 
-        [% embed_sample("first-document") %]
+        [%- embed_sample("first-document") -%]
 
 	<para>
 	אם תשמרו מסמך זה לתוך קובץ עם סיומת
@@ -160,7 +160,7 @@
 	זה לתוך קובץ עם סיומת <filename xml:lang="en">.html</filename>:
 	</para>
 
-[% embed_sample("two-paragraphs-without-markup") %]
+[%- embed_sample("two-paragraphs-without-markup") -%]
 
 	<para>
 	שוב פעם נקבל את הכל בשורה אחת:
@@ -205,7 +205,7 @@
             (<quote xml:lang="en"><emphasis role="bold">P</emphasis>aragraph</quote>):
         </para>
 
-[% embed_sample("two-paragraphs-with-p-tags") %]
+[%- embed_sample("two-paragraphs-with-p-tags") -%]
         <para>
             ואנו מקבלים את:
         </para>
@@ -228,7 +228,7 @@
             קוראים "a" (קיצור של "Anchor") והיא מקבלת תכונה בשם
             <code xml:lang="en">href</code> כפרמטר. הבא נראה אותה בפעולה:
         </para>
-[% embed_sample("a-href-sample") %]
+[%- embed_sample("a-href-sample") -%]
 
         <mediaobject>
 	    <alt>דוגמה לתגית "a"</alt>
@@ -268,7 +268,7 @@
         <para>
             הנה הדוגמה:
         </para>
-[% embed_sample("bold-and-italics-sample") %]
+[%- embed_sample("bold-and-italics-sample") -%]
 
         <mediaobject>
 	    <alt>דוגמה לגופן מעובה ונטוי</alt>
@@ -300,7 +300,7 @@
             וסיפא מתאימים. בו נראה וננתח דוגמה למסמך HTML מלא כזה:
         </para>
 
-        [% embed_sample("complete-example-1") %]
+[%- embed_sample("complete-example-1") -%]
 
         <para>
             היא נראית כך:
@@ -488,7 +488,7 @@
                 המחולק לחלקים בעזרת כותרותיו:
             </para>
 
-            [% embed_sample("h1-h2-example") %]
+            [%- embed_sample("h1-h2-example") -%]
 
             <para>
                 וכך זה נראה:
@@ -533,7 +533,7 @@
                 ומומלץ להיזהר. הנה דוגמה:
             </para>
 
-            [% embed_sample("with-placeholders") %]
+            [%- embed_sample("with-placeholders") -%]
 
         </section>
 
@@ -575,7 +575,7 @@
                     הנה דוגמה קטנה:
                 </para>
 
-                [% embed_xhtml_sample("with-title") %]
+                [%- embed_xhtml_sample("with-title") -%]
 
              </section>
 
@@ -616,7 +616,7 @@
              בתוך תגית ה-head, לדוגמה באופן הבא:
              </para>
 
-             [% embed_xhtml_sample("with-style-tag") %]
+             [%- embed_xhtml_sample("with-style-tag") -%]
 
              <para>
              כפי שניתן לראות מצילום המסך, הטקסט במסמך הוא ירוק:
