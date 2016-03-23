@@ -9,8 +9,12 @@ DOCMAKE_SGML_PATH = ./sgml/shlomif-docbook/
 
 XMLTO_PARAMS = --stringparam "docmake.output.path_to_root=$(shell perl -e '$$_=shift;$$c=tr[/][];print "../"x($$c+2)' $(call get,DOCBOOK_DIRS_MAP,$(patsubst $(DOCBOOK_INDIVIDUAL_XHTML_DIR)/%,%,$@)))"
 
-$(DOC).xml: $(DOC).xml.tt Render-TT2-to-Docbook.pl
+DOCBOOK = $(DOC).xml
+
+$(DOCBOOK): $(DOC).xml.tt Render-TT2-to-Docbook.pl
 	perl Render-TT2-to-Docbook.pl
+
+docbook: $(DOCBOOK)
 
 # validate: validate-jing
 validate: validate-xmllint
@@ -21,8 +25,12 @@ validate-xmllint: $(DOC).xml
 validate-jing: $(DOC).xml
 	jing http://www.docbook.org/xml/5.0/rng/docbook.rng $<
 
+GENERATED_DOCS = $(DEST_INDEX) $(DOC)/style.css $(DEST_IMAGES)
+
 html-xsl: $(DEST_INDEX) $(DOC)/style.css put-images
 
+clean:
+	rm -f $(GENERATED_DOCS)
 
 # This is to use the docbook-xsl-snapshot which should have a better
 # support for xml:lang, etc. See:
