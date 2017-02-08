@@ -5,10 +5,11 @@ use warnings;
 
 use Template;
 
-my $tt = Template->new({
-    INTERPOLATE  => 1,
-})
-    or die "$Template::ERROR\n";
+my $tt = Template->new(
+    {
+        INTERPOLATE => 1,
+    }
+) or die "$Template::ERROR\n";
 
 sub embed_sample_generic
 {
@@ -67,19 +68,16 @@ sub standalone_tag
     return start_tag("$id /");
 }
 
-my $vars =
-{
-    embed_sample => \&embed_sample,
+my $vars = {
+    embed_sample       => \&embed_sample,
     embed_xhtml_sample => \&embed_xhtml_sample,
-    stag => \&start_tag,
-    etag => \&end_tag,
+    stag               => \&start_tag,
+    etag               => \&end_tag,
+
     # Only tag.
     otag => \&standalone_tag,
 };
 
-$tt->process(
-    "hebrew-html-tutorial.xml.tt",
-    $vars,
-    "hebrew-html-tutorial.xml",
-)
+$tt->process( "hebrew-html-tutorial.xml.tt", $vars,
+    "hebrew-html-tutorial.xml", )
     or die $tt->error(), "\n";
