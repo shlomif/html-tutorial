@@ -25,7 +25,7 @@ sub embed_sample_generic
         close($in);
     }
 
-    return <<"EOF"
+    return <<"EOF";
 <programlisting xml:lang="en">
 <![CDATA[
 $text
